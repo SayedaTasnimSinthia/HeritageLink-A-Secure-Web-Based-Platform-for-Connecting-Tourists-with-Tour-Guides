@@ -1,0 +1,110 @@
+.cookie-page-wrapper {
+  min-height: 75vh;
+  padding: 60px 20px 90px 20px;
+  background-color: var(--page-bg, #F9F8F6);
+}
+
+.cookie-title-area {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cookie-main-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--navy-dark, #1B2A4A);
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 4px solid var(--primary-color, #B33927);
+  margin: 0;
+}
+
+.cookie-info-card {
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--primary-color, #B33927);
+  border-radius: 24px;
+  padding: 50px 60px;
+  width: 92%;
+  max-width: 1060px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(179, 57, 39, 0.08);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cookie-info-card p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.05rem;
+  color: #24415C;
+  line-height: 1.85;
+  font-weight: 500;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+}
+
+.cookie-subheading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy-dark, #1B2A4A);
+  margin: 6px 0 0 0;
+}
+
+.cookie-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cookie-bullet-list li {
+  position: relative;
+  padding-left: 28px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.03rem;
+  color: #24415C;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.cookie-bullet-list li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: var(--primary-color, #B33927);
+  border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 10px; /* Aligns with the first line of text */
+}
+.cookie-bullet-list li strong {
+  color: var(--navy-dark, #1B2A4A);
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .cookie-page-wrapper {
+    padding: 40px 14px 60px 14px;
+  }
+  .cookie-main-title {
+    font-size: 2.2rem;
+  }
+  .cookie-info-card {
+    width: 100%;
+    padding: 30px 22px;
+    border-radius: 18px;
+  }
+  .cookie-info-card p,
+  .cookie-bullet-list li {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}

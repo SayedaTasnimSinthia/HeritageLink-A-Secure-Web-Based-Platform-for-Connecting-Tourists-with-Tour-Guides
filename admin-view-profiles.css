@@ -1,0 +1,395 @@
+.manage-users-wrapper {
+  min-height: 80vh;
+  padding: 40px 0 90px;
+  background-color: var(--page-bg, #F9F8F6);
+}
+
+
+.admin-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-bar .admin-nav-actions .btn-nav-dashboard, .btn-nav-dashboard {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  color: var(--navy-dark, #1B2A4A) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-bar .admin-nav-actions .btn-nav-dashboard:hover, .btn-nav-dashboard:hover {
+  color: var(--primary-color, #B33927) !important;
+  background-color: rgba(179, 57, 39, 0.08);
+}
+
+
+.admin-user-badge {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy-dark, #1B2A4A);
+  background-color: #E2E8F0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-color, #E8E5DF);
+}
+
+.admin-user-badge i {
+  color: var(--primary-color, #B33927);
+}
+
+
+.btn-admin-logout {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background-color: var(--primary-color, #B33927) !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  font-size: 0.92rem !important;
+  padding: 9px 20px !important;
+  border-radius: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: 0.2s ease !important;
+  box-shadow: 0 4px 12px rgba(179, 57, 39, 0.2) !important;
+}
+
+.btn-admin-logout:hover {
+  background-color: var(--primary-dark, #8F2B1D) !important;
+  transform: translateY(-1px);
+}
+
+.users-header-area {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.users-main-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--navy-dark, #1B2A4A);
+  letter-spacing: -0.01em;
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 4px solid var(--primary-color, #B33927);
+  margin-bottom: 8px;
+}
+
+.users-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-muted, #5A6A80);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+.users-toolbar-card {
+  background: var(--white, #FFFFFF);
+  border: 1.5px solid var(--border-color, #E8E5DF);
+  border-radius: 14px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.search-input-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--page-bg, #F9F8F6);
+  border: 1.5px solid var(--border-color, #E8E5DF);
+  padding: 11px 18px;
+  border-radius: 8px;
+  width: 480px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input-box:focus-within {
+  border-color: var(--primary-color, #B33927);
+  box-shadow: 0 0 0 3px rgba(179, 57, 39, 0.12);
+  background-color: #FFFFFF;
+}
+
+.search-input-box i {
+  color: var(--text-muted, #5A6A80);
+}
+
+.search-input-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.94rem;
+  color: var(--navy-dark, #1B2A4A);
+}
+
+.count-pill {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--navy-dark, #1B2A4A);
+  background: #E2E8F0;
+  padding: 8px 18px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.count-pill strong {
+  color: var(--primary-color, #B33927);
+}
+
+.tourists-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.tourist-profile-card {
+  background: var(--white, #FFFFFF);
+  border: 1.5px solid var(--border-color, #E8E5DF);
+  border-radius: 18px;
+  padding: 26px 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tourist-profile-card:hover {
+  border-color: rgba(179, 57, 39, 0.35);
+  box-shadow: 0 8px 24px rgba(179, 57, 39, 0.06);
+}
+
+.card-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid var(--border-color, #E8E5DF);
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.tourist-ident {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.tourist-avatar-img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color, #E8E5DF);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.name-id-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.name-id-row h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.35rem;
+  color: var(--navy-dark, #1B2A4A);
+  margin: 0;
+}
+
+.cust-code-badge {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--primary-color, #B33927);
+  background-color: rgba(179, 57, 39, 0.1);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.tourist-email {
+  font-size: 0.88rem;
+  color: var(--text-muted, #5A6A80);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.reg-date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.reg-date-box .meta-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted, #5A6A80);
+}
+
+.reg-date-box .meta-val {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--navy-dark, #1B2A4A);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.details-section-box {
+  background-color: var(--page-bg, #F9F8F6);
+  border: 1px solid var(--border-color, #E8E5DF);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-box-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--navy-dark, #1B2A4A);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--border-color, #E8E5DF);
+  padding-bottom: 8px;
+}
+
+.section-box-title i {
+  color: var(--primary-color, #B33927);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+}
+
+.info-label {
+  color: var(--text-muted, #5A6A80);
+  font-weight: 600;
+}
+
+.info-value {
+  font-weight: 700;
+  color: var(--navy-dark, #1B2A4A);
+  text-align: right;
+}
+
+.font-highlight {
+  color: var(--primary-color, #B33927);
+  font-weight: 800;
+}
+
+.text-unfilled {
+  color: #94A3B8;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.badge-blood-group {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #DC2626;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.emergency-tel-link {
+  color: #B33927;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.emergency-tel-link:hover {
+  text-decoration: underline;
+}
+
+.no-records-card {
+  background: var(--white, #FFFFFF);
+  border: 1.5px dashed var(--border-color, #E8E5DF);
+  border-radius: 16px;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted, #5A6A80);
+}
+
+.no-records-card i {
+  font-size: 3rem;
+  color: #CBD5E1;
+  margin-bottom: 14px;
+}
+
+.no-records-card h2 {
+  font-size: 1.6rem;
+  color: var(--navy-dark, #1B2A4A);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+  .card-details-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-input-box {
+    width: 100%;
+  }
+  .users-toolbar-card {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-nav-actions {
+    gap: 10px;
+  }
+  .card-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .reg-date-box {
+    align-items: flex-start;
+  }
+  .users-main-title {
+    font-size: 2rem;
+  }
+}

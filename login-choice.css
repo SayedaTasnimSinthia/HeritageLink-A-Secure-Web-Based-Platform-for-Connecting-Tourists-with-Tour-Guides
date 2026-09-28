@@ -1,0 +1,121 @@
+.choice-main-container {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.choice-title-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.choice-heading {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--navy-dark);
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.choice-heading span {
+  color: var(--primary-color);
+}
+
+
+.roles-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+.role-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  width: 280px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 24px;
+}
+
+.role-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+  box-shadow: 0 16px 36px rgba(179, 57, 39, 0.15);
+}
+
+
+.role-icon-box {
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  background-color: var(--page-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: 0.3s ease;
+}
+
+.role-icon-box i {
+  font-size: 4rem;
+  color: var(--navy-dark);
+  transition: 0.3s ease;
+}
+
+.role-card:hover .role-icon-box {
+  background-color: rgba(179, 57, 39, 0.08);
+}
+
+.role-card:hover .role-icon-box i {
+  color: var(--primary-color);
+  transform: scale(1.08);
+}
+
+
+.role-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+.role-name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--text-dark);
+  transition: 0.2s ease;
+}
+
+.role-card:hover .role-name {
+  color: var(--primary-color);
+}
+
+
+@media (max-width: 600px) {
+  .roles-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .role-card {
+    width: 100%;
+    max-width: 280px;
+  }
+}

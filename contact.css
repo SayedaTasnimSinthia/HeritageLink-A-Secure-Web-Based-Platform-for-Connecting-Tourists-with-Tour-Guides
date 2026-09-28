@@ -1,0 +1,136 @@
+.contact-section {
+  min-height: 75vh;
+  padding: 60px 0 90px;
+  background-color: var(--page-bg);
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 50px auto;
+}
+
+.contact-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--navy-dark);
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 4px solid var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.contact-title .phone-emoji {
+  font-size: 2.2rem;
+  vertical-align: middle;
+}
+
+.contact-subtitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2D4A5E;
+  line-height: 1.7;
+}
+
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.contact-card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 32px 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 12px 30px rgba(179, 57, 39, 0.1);
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.card-heading h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy-dark);
+}
+
+.card-icon {
+  font-size: 1.35rem;
+}
+
+.address-icon {
+  color: var(--primary-color);
+}
+
+.phone-icon {
+  color: #6366F1; 
+}
+
+.email-icon {
+  color: #A855F7; 
+}
+
+.clock-icon {
+  color: var(--brass-color);
+}
+
+.card-body p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.card-body p strong {
+  color: var(--text-dark);
+}
+
+.card-body a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.card-body a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: 24px 20px;
+  }
+}
