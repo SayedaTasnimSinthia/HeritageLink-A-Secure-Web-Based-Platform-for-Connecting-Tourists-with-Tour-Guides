@@ -99,37 +99,37 @@ require_once 'header.php';
 
     <div class="guides-grid">
       <div class="guide-card">
-        <img class="guide-avatar" src="images/2 (1).jpg" alt="Kamal Ahmed" />
+        
         <div class="guide-name">Kamal Ahmed <i class="fa-solid fa-circle-check verified-icon"></i></div>
         <div class="guide-role">Dhaka & Sonargaon Specialist</div>
         <div class="guide-tags">
           <span class="tag">Bengali</span>
           <span class="tag">English</span>
         </div>
-        <a href="guide-profile.php?id=1" class="btn-brass">View Profile</a>
+   
       </div>
 
 
       <div class="guide-card">
-        <img class="guide-avatar" src="images/3.jpg" alt="Alina Rahman" />
+       
         <div class="guide-name">Alina Rahman <i class="fa-solid fa-circle-check verified-icon"></i></div>
         <div class="guide-role">Archaeology Expert</div>
         <div class="guide-tags">
           <span class="tag">Bengali</span>
           <span class="tag">Japanese</span>
         </div>
-        <a href="guide-profile.php?id=2" class="btn-brass">View Profile</a>
+
       </div>
 
       <div class="guide-card">
-        <img class="guide-avatar" src="images/5.jpg" alt="Allan Marma" />
+      
         <div class="guide-name">Allan Marma <i class="fa-solid fa-circle-check verified-icon"></i></div>
         <div class="guide-role">Chittagong Hill Tracts</div>
         <div class="guide-tags">
           <span class="tag">Bengali</span>
           <span class="tag">Burmese</span>
         </div>
-        <a href="guide-profile.php?id=3" class="btn-brass">View Profile</a>
+   
       </div>
     </div>
   </div>
